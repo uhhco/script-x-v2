@@ -3,6 +3,13 @@
 
 -- Instances:
 
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Attached";
+	Text = "Script X Attached: Thanks For Using ScriptX";
+	Duration = "2";
+}
+)
+
 local MainExecutor = Instance.new("ScreenGui")
 local Window = Instance.new("Frame")
 local WindowTop = Instance.new("Frame")
@@ -50,16 +57,16 @@ Window.Parent = MainExecutor
 Window.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 Window.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Window.BorderSizePixel = 0
-Window.Position = UDim2.new(0.308971792, 0, 0.276090324, 0)
-Window.Size = UDim2.new(0, 505, 0, 289)
+Window.Position = UDim2.new(0.216180921, 0, 0.211943313, 0)
+Window.Size = UDim2.new(0, 610, 0, 332)
 
 WindowTop.Name = "WindowTop"
 WindowTop.Parent = Window
 WindowTop.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 WindowTop.BorderColor3 = Color3.fromRGB(0, 0, 0)
 WindowTop.BorderSizePixel = 0
-WindowTop.Position = UDim2.new(-0.000991911977, 0, -0.00301384833, 0)
-WindowTop.Size = UDim2.new(0, 505, 0, 44)
+WindowTop.Position = UDim2.new(5.00288166e-08, 0, -9.19204126e-08, 0)
+WindowTop.Size = UDim2.new(0, 609, 0, 42)
 
 UICorner.Parent = WindowTop
 
@@ -69,7 +76,7 @@ WindowTittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WindowTittle.BackgroundTransparency = 1.000
 WindowTittle.BorderColor3 = Color3.fromRGB(0, 0, 0)
 WindowTittle.BorderSizePixel = 0
-WindowTittle.Position = UDim2.new(0.300990105, 0, -0.0681818202, 0)
+WindowTittle.Position = UDim2.new(0.356819332, 0, -0.115801133, 0)
 WindowTittle.Size = UDim2.new(0, 200, 0, 50)
 WindowTittle.Font = Enum.Font.FredokaOne
 WindowTittle.Text = "Script X"
@@ -92,8 +99,8 @@ BackGround.Parent = Execution
 BackGround.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
 BackGround.BorderColor3 = Color3.fromRGB(0, 0, 0)
 BackGround.BorderSizePixel = 0
-BackGround.Position = UDim2.new(0.0186170209, 0, 0.000626202906, 0)
-BackGround.Size = UDim2.new(0, 388, 0, 198)
+BackGround.Position = UDim2.new(0.0186170209, 0, -0.0284998622, 0)
+BackGround.Size = UDim2.new(0, 470, 0, 240)
 
 UICorner_3.Parent = BackGround
 
@@ -102,7 +109,7 @@ Execute.Parent = Execution
 Execute.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
 Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Execute.BorderSizePixel = 0
-Execute.Position = UDim2.new(0.0186170209, 0, 1.00137305, 0)
+Execute.Position = UDim2.new(0.0186170209, 0, 1.16642153, 0)
 Execute.Size = UDim2.new(0, 75, 0, 23)
 Execute.Font = Enum.Font.SourceSans
 Execute.Text = "Execute"
@@ -116,7 +123,7 @@ Clear.Parent = Execution
 Clear.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
 Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Clear.BorderSizePixel = 0
-Clear.Position = UDim2.new(0.236702129, 0, 1.00137305, 0)
+Clear.Position = UDim2.new(0.247340426, 0, 1.16642153, 0)
 Clear.Size = UDim2.new(0, 75, 0, 23)
 Clear.Font = Enum.Font.SourceSans
 Clear.Text = "Clear"
@@ -130,8 +137,8 @@ ExecutorB.Parent = Window
 ExecutorB.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
 ExecutorB.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ExecutorB.BorderSizePixel = 0
-ExecutorB.Position = UDim2.new(0.0158417057, 0, 0.416598111, 0)
-ExecutorB.Size = UDim2.new(0, 93, 0, 45)
+ExecutorB.Position = UDim2.new(0.00819682144, 0, 0.410574019, 0)
+ExecutorB.Size = UDim2.new(0, 114, 0, 34)
 ExecutorB.Font = Enum.Font.SourceSans
 ExecutorB.Text = "Executor"
 ExecutorB.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -145,8 +152,8 @@ ScriptHubB.Parent = Window
 ScriptHubB.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
 ScriptHubB.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptHubB.BorderSizePixel = 0
-ScriptHubB.Position = UDim2.new(0.0158417057, 0, 0.600163519, 0)
-ScriptHubB.Size = UDim2.new(0, 92, 0, 42)
+ScriptHubB.Position = UDim2.new(0.00928434823, 0, 0.542934537, 0)
+ScriptHubB.Size = UDim2.new(0, 114, 0, 34)
 ScriptHubB.Font = Enum.Font.SourceSans
 ScriptHubB.Text = "ScriptHub"
 ScriptHubB.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -277,8 +284,8 @@ ScriptEditor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScriptEditor.BackgroundTransparency = 1.000
 ScriptEditor.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptEditor.BorderSizePixel = 0
-ScriptEditor.Position = UDim2.new(0.231487617, 0, 0.210623026, 0)
-ScriptEditor.Size = UDim2.new(0, 371, 0, 179)
+ScriptEditor.Position = UDim2.new(0.231487632, 0, 0.195562795, 0)
+ScriptEditor.Size = UDim2.new(0, 448, 0, 226)
 ScriptEditor.ClearTextOnFocus = false
 ScriptEditor.Font = Enum.Font.SourceSans
 ScriptEditor.MultiLine = true
@@ -291,14 +298,14 @@ ScriptEditor.TextYAlignment = Enum.TextYAlignment.Top
 
 -- Scripts:
 
-local function QNCNRGC_fake_script() -- Window.LocalScript 
+local function BKTU_fake_script() -- Window.LocalScript 
 	local script = Instance.new('LocalScript', Window)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(QNCNRGC_fake_script)()
-local function CQEDZZE_fake_script() -- Execute.LocalScript 
+coroutine.wrap(BKTU_fake_script)()
+local function NNMREIH_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local button = script.Parent
@@ -307,8 +314,8 @@ local function CQEDZZE_fake_script() -- Execute.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(CQEDZZE_fake_script)()
-local function CIDDXKE_fake_script() -- Clear.LocalScript 
+coroutine.wrap(NNMREIH_fake_script)()
+local function TXAXDKY_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local button = script.Parent
@@ -317,8 +324,8 @@ local function CIDDXKE_fake_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(CIDDXKE_fake_script)()
-local function WMMBK_fake_script() -- ExecutorB.LocalScript 
+coroutine.wrap(TXAXDKY_fake_script)()
+local function YTUGLO_fake_script() -- ExecutorB.LocalScript 
 	local script = Instance.new('LocalScript', ExecutorB)
 
 	local button = script.Parent
@@ -333,8 +340,8 @@ local function WMMBK_fake_script() -- ExecutorB.LocalScript
 		script.Parent.Parent.ScriptEditor.Interactable = true
 	end)
 end
-coroutine.wrap(WMMBK_fake_script)()
-local function NHNFAPJ_fake_script() -- ScriptHubB.LocalScript 
+coroutine.wrap(YTUGLO_fake_script)()
+local function MBRWSJS_fake_script() -- ScriptHubB.LocalScript 
 	local script = Instance.new('LocalScript', ScriptHubB)
 
 	local button = script.Parent
@@ -349,8 +356,8 @@ local function NHNFAPJ_fake_script() -- ScriptHubB.LocalScript
 		script.Parent.Parent.ScriptEditor.Interactable = false
 	end)
 end
-coroutine.wrap(NHNFAPJ_fake_script)()
-local function JFNYQY_fake_script() -- Execute_2.LocalScript 
+coroutine.wrap(MBRWSJS_fake_script)()
+local function HSIT_fake_script() -- Execute_2.LocalScript 
 	local script = Instance.new('LocalScript', Execute_2)
 
 	local button = script.Parent
@@ -358,8 +365,8 @@ local function JFNYQY_fake_script() -- Execute_2.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(JFNYQY_fake_script)()
-local function DMOADFT_fake_script() -- Execute_3.LocalScript 
+coroutine.wrap(HSIT_fake_script)()
+local function UFAVN_fake_script() -- Execute_3.LocalScript 
 	local script = Instance.new('LocalScript', Execute_3)
 
 	local button = script.Parent
@@ -717,8 +724,8 @@ local function DMOADFT_fake_script() -- Execute_3.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(DMOADFT_fake_script)()
-local function GFYXSUZ_fake_script() -- Execute_4.LocalScript 
+coroutine.wrap(UFAVN_fake_script)()
+local function IDCFSC_fake_script() -- Execute_4.LocalScript 
 	local script = Instance.new('LocalScript', Execute_4)
 
 	local button = script.Parent
@@ -726,8 +733,8 @@ local function GFYXSUZ_fake_script() -- Execute_4.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 	end)
 end
-coroutine.wrap(GFYXSUZ_fake_script)()
-local function VZMID_fake_script() -- Window.UNC_Boost 
+coroutine.wrap(IDCFSC_fake_script)()
+local function HVCNE_fake_script() -- Window.UNC_Boost 
 	local script = Instance.new('LocalScript', Window)
 
 	--[[ hello very cool incognito / solara (mostly incognito because solara has most of these functions, just not all) script showcase!! 
@@ -2425,4 +2432,4 @@ local function VZMID_fake_script() -- Window.UNC_Boost
 	QueueGetIdentity()
 	getgenv().MoreUNC = true
 end
-coroutine.wrap(VZMID_fake_script)()
+coroutine.wrap(HVCNE_fake_script)()
